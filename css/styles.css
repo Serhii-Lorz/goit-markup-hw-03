@@ -17,6 +17,7 @@ body {
     justify-content: space-around;
     height: 72px;
     width: 1440px;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .logo {
@@ -243,9 +244,16 @@ body {
 }
 
 .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 72px;
+    margin-left: 156px;
+    align-items: center;
     list-style: none;
 }
 
+/* 
 .portfolio-first-row {
     display: flex;
     flex-direction: row;
@@ -260,7 +268,7 @@ body {
     margin-top: 80px;
     margin-left: 156px;
     align-items: center;
-}
+} */
 
 .portfolio-block {
     display: flex;
