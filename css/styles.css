@@ -31,7 +31,8 @@ body {
 
 .logo {
     display: flex;
-    margin-left: 156px;
+    /* margin-left: 156px; */
+    margin-right: 76px;
     color: #2E2F42;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -48,11 +49,13 @@ body {
 
 .header-nav {
     display: flex;
+    flex-direction: row;
     gap: 40px;
     margin-left: 76px;
     margin-right: 332px;
+    padding: 24px 0;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     list-style: none;
 }
 
@@ -79,26 +82,27 @@ body {
 
 .header-address {
     display: flex;
-    margin-right: 156px;  
+    /* margin-right: 156px;   */
     flex-direction: row;
     align-items: center;
     gap: 40px;
     list-style: none;
 }
 
-.header-address .head-addr {
+.head-addr {
     font-size: 16px;
     line-height:1.5;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.02em;
+    color: #434455;
 }
 
-.header-address .head-addr:hover {
+.head-addr:hover {
     color:#404BBF;
 }
 
-.header-address .head-addr:active {
+.head-addr:active {
     color: #404BBF;
 }
 
