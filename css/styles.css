@@ -191,6 +191,10 @@ body {
     background-color: #F4F4FD;
 }
 
+.our-team {
+    padding: 120px 0;
+}
+
 .ourteam {
     display: flex;
     margin-top: 72px;
@@ -208,9 +212,14 @@ body {
     margin-left: 156px;
     margin-bottom: 120px;
     padding: 8px 24px 24px 24px;
+    gap: 24px;
     width: 1128px;
     height: 104px;
     list-style: none;
+}
+
+.first-feature {
+    width: calc((100% - 72px) / 4);
 }
 
 .team-li {
@@ -219,6 +228,10 @@ body {
     margin-bottom: 120px;
     list-style: none;
     background-color: none;
+}
+
+.features-title {
+    margin-bottom: 8px;
 }
 
 .team-title {
