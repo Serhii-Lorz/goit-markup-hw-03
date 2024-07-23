@@ -109,12 +109,11 @@ body {
 .main-section {
     display: flex;
     flex-direction: column;
-    height: 600px;
-    width: 1440px;
+    padding: 188px 0;
     background-color: #2e2f42;
 }
 
-.main-section .main-title {
+.main-title {
     display: flex;
     margin-top: 188px;
     margin-left: 472px;
@@ -123,32 +122,34 @@ body {
     background-color: #2E2F42;
     font-weight:700;
     font-size:56px;
+    max-width: 496px;
     line-height:1.07;
     text-align: center;
     letter-spacing: 0.02em;
 }
 
-.main-section .order-button {
-    display: flex;
+.order-button {
+    display: block;
     justify-content: center;
     align-items: center;
     margin-top: 48px;
     margin-left: 636px;
     margin-right: 645px;
     height: 56px;
-    width: 169px;
+    min-width: 169px;
     font-family: "Roboto", sans-serif;
     cursor:pointer;
     color:#FFFFFF;
-    background:#4D5AE5;
+    background-color:#4D5AE5;
     font-weight:500;
     font-size:16px;
     line-height:1.5;
     letter-spacing: 0.04em;
-    border-radius: 4px 4px 4px 4px;
+    border: none;
+    border-radius: 4px;
 }
 
-.main-section .order-button:focus {
+.order-button:focus {
     cursor: pointer;
     color: #FFFFFF;
     background:#404BBF;;
@@ -157,7 +158,7 @@ body {
     line-height: 1.5;
 }
 
-.main-section .order-button:hover {
+.order-button:hover {
     cursor: pointer;
     color: #FFFFFF;
     background: #404BBF;
