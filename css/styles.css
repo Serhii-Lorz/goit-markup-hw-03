@@ -237,7 +237,7 @@ body {
 
 .team-li {
     display: flex;
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
     flex-direction: column;
     margin-bottom: 120px;
     list-style: none;
@@ -247,6 +247,7 @@ body {
 
 .features-title {
     margin-bottom: 8px;
+    width: calc((100% - 72px) / 4);
 }
 
 .team-title {
