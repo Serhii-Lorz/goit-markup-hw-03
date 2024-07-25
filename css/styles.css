@@ -340,6 +340,7 @@ body {
 .container-name-position {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-paragraph {
@@ -360,13 +361,13 @@ body {
     gap: 0px;
     opacity: 0px;
     background-color:#2e2f42;
+    padding: 100px 0;
 }
 
 .footer-logo {
-    display: flex;
-    margin-top: 101.5px;
+    display: inline-block;
+    flex-direction: row;
     margin-left: 156px;
-    margin-top: 101.5;
     color:#4D5AE5;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -375,6 +376,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    margin-bottom: 16px;
 }
 
 .footer-logo-main {
