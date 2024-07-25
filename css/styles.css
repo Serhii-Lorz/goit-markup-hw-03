@@ -235,6 +235,10 @@ body {
     width: calc((100% - 72px) / 4);
 }
 
+.employer-information {
+    padding: 32px 0;
+}
+
 .team-li {
     display: flex;
     /* width: calc((100% - 72px) / 4); */
@@ -268,9 +272,11 @@ body {
     background-color: #FFFFFF;
 }
 
-.ourteam .ourteam-title {
+.ourteam-title {
     display: flex;
-    padding: 32px 65px 8px 65px;
+    text-align: center;
+    padding: 0px 65px 0px 65px;
+    margin-bottom: 8px;
     color: #2E2F42;
     font-weight:500;
     font-size: 20px;
@@ -278,9 +284,10 @@ body {
     letter-spacing: 0.02em;
 }
 
-.ourteam .ourteam-paragraph {
+.ourteam-paragraph {
     display: flex;
-    padding: 0px 60px 32px 60px;
+    text-align: center;
+    padding: 0px 60px 0px 60px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
