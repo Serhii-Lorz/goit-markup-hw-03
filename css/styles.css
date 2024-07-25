@@ -10,7 +10,7 @@ body {
     background-color:#FFFFFF
 }
 
-.header-container {
+.header-container>div {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
@@ -19,7 +19,7 @@ body {
     width: 1158px; 
 }
 
-.header {
+.header-container {
     display: flex;
     flex-direction: row;
     align-items: baseline;
