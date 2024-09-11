@@ -8,15 +8,44 @@ body {
     letter-spacing: 2%;
     color: #434455;
     background-color: #FFFFFF;
+    flex-grow: 1;
 }
 
 ul {
     list-style-type: none;
 }
 
+/* Стилі для всієї сторінки(page-div) */
+
+.page-div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Стилі для header */
 
+.header-div {
+    display: flex;
+    width: 1440px;
+    height: 72px;
+    gap: 0px;
+    border: 0px 0px 1px 0px;
+    opacity: 0px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #E7E9FC;
+}
+
 .header .logo {
+    display: block;
+    padding: 0px;
+    margin-top: 25.5px;
+    margin-left: 156px;
+    margin-right: 76px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -36,6 +65,19 @@ ul {
     letter-spacing: 0.03em;
     text-align: left;
     color: #2E2F42;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation-ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 0px 40px;
+    margin-top: 24px;
 }
 
 .header .navigation .link {
@@ -64,6 +106,15 @@ ul {
     font-style: normal;
 }
 
+.address-ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin-left: 332px;
+    gap: 0px 40px;
+    margin-top: 24px;
+}
+
 .link-address {
     font-size: 16px;
     font-weight: 400;
@@ -83,10 +134,25 @@ ul {
 .link-address:focus {
     color:#404bbf;
 }
+
 /* Стилі для first-section */
 
+.first-section-div {
+    display: flex;
+    width: 1440px;
+    height: 600px;
+    top: 72px;
+    gap: 0px;
+    opacity: 0px;
+}
+
 .first-section {
-    background-color: #2E2F42;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    height: 600px;
+    background-color: #2E2F42;
 }
 
 .main-title {
@@ -94,11 +160,17 @@ ul {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    width: 496px;
+    height: 120px;
     text-align: center;
     color: #FFFFFF;
+    padding: 0px;
+    margin-top: 188px;
+    margin-bottom: 48px;
 }
 
 .button {
+    display: flex;
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
@@ -108,6 +180,10 @@ ul {
     cursor: pointer;
     color: #FFFFFF;
     background-color: #4D5AE5;
+    padding: 16px 32px 16px 32px;
+    gap: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000026;
 }
 
 .button:hover {
@@ -120,7 +196,23 @@ ul {
 
 /* Стилі для second-section */
 
+.second-section-div {
+    width: 1440px;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    padding: 0px;
+    margin: 0px;
+    padding: 120px 156px;
+}
+
 .second-section .features .title {
+    display: flex;
+    margin-bottom: 8px;
+    margin-right: 24px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -130,6 +222,9 @@ ul {
 }
 
 .second-section .features .paragraph {
+    display: flex;
+    margin-bottom: 8px;
+    margin-right: 24px;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -140,8 +235,17 @@ ul {
 
 /* Стилі для third-section */
 
+.third-section-div {
+    display: flex;
+    flex-direction: column;
+}
+
 .third-section {
+    display: flex;
+    flex-direction: column;
     background-color: #F4F4FD;
+    width: 1440px;
+    height: 732px;
 }
 
 .third-section-main-title {
@@ -152,10 +256,26 @@ ul {
     text-align: center;
     text-transform: capitalize;
     color:#2e2f42;
+    margin-top: 120px;
+}
+
+.our-team {
+    display: flex;
+    flex-direction: row;
+    margin-left: 156px;
+    margin-top: 72px;
+    padding: 0px;
 }
 
 .our-team-li {
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
+    margin-right: 24px;
+    padding: 0px;
+    box-shadow: 0px 2px 1px 0px #2E2F4214;
+    box-shadow: 0px 1px 1px 0px #2E2F4229;
+    box-shadow: 0px 1px 6px 0px #2E2F4214;
 }
 
 .our-team .title {
@@ -178,6 +298,14 @@ ul {
 
 /* Стилі для fourth-section */
 
+.fourth-section {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 1240px;
+    margin: 0px;
+}
+
 .fourth-section-main-title {
     font-size: 36px;
     font-weight: 700;
@@ -186,6 +314,24 @@ ul {
     text-align: center;
     text-transform: capitalize;
     color:#2e2f42;
+    margin-top: 120px;
+}
+
+.fourth-section-ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 72px 0px 120px 156px;
+}
+
+.fourth-section-li {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 24px 48px 0px;
+    border-width: 0px, 1px, 1px, 1px;
+    border-style: solid;
+    border-color: #E7E9FC;
 }
 
 .fourth-section .title {
@@ -209,6 +355,11 @@ ul {
 /* Стилі для footer */
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 1440px;
+    height: 312px;
     background-color: #2E2F42;
 }
 
@@ -222,6 +373,8 @@ ul {
     color: #4D5AE5;
     text-decoration: none;
     text-transform: uppercase;
+    margin-top: 101.5px;
+    margin-left: 156px;
 }
 
 .footer .span {
@@ -229,6 +382,14 @@ ul {
 }
 
 .footer .paragraph {
+    display: flex;
+    flex-direction: column;
+    width: 264px;
+    height: 72px;
+    gap: 0px;
+    opacity: 0px;
+    margin-left: 156px;
+    margin-top: 16px;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
