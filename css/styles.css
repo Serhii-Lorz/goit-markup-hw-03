@@ -16,6 +16,8 @@ ul {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
@@ -44,7 +46,6 @@ ul {
 .header .logo {
     display: block;
     padding: 0px;
-    margin-left: 156px;
     margin-right: 76px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -78,10 +79,9 @@ ul {
     flex-direction: row;
     padding: 0px;
     gap: 0px 40px;
-    margin-top: 24px;
 }
 
-.header .navigation .link {
+.header .navigation .navigation-li {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -91,15 +91,15 @@ ul {
     color: #2E2F42;
 }
 
-.header .navigation .link:hover {
+.header .navigation .navigation-li:hover {
     color: #404BBF;
 }
 
-.header .navigation .link:focus {
+.header .navigation .navigation-li:focus {
     color: #404BBF;
 }
 
-.header .navigation .link:active {
+.header .navigation .navigation-li:active {
     color: #404bbf;
 }
 
@@ -140,21 +140,20 @@ ul {
 
 .first-section {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 1440px;
     height: 600px;
     top: 72px;
     gap: 0px;
     opacity: 0px;
+    padding: 188px 0;
+    background-color: #2E2F42;
 }
 
 .first-section-div {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 1440px;
-    height: 600px;
-    background-color: #2E2F42;
-    padding: 188px 0;
 }
 
 .main-title {
@@ -162,7 +161,7 @@ ul {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    width: 496px;
+    max-width: 496px;
     height: 120px;
     text-align: center;
     color: #FFFFFF;
@@ -172,8 +171,10 @@ ul {
 }
 
 .button {
-    display: flex;
+    display: block;
     font-family: inherit;
+    min-width: 169px;
+    height: 56px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -186,6 +187,7 @@ ul {
     gap: 10px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px #00000026;
+    border: none;
 }
 
 .button:hover {
@@ -199,7 +201,19 @@ ul {
 /* Стилі для second-section */
 
 .second-section {
+    padding: 120px 0;
     width: 1440px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .features {
@@ -209,6 +223,11 @@ ul {
     padding: 0px;
     margin: 0px;
     padding: 120px 156px;
+    gap: 24px;
+}
+
+.features-li {
+    width: calc((100% - 72px) / 4);
 }
 
 .second-section .features .title {
@@ -240,14 +259,15 @@ ul {
 .third-section {
     display: flex;
     flex-direction: column;
+    background-color: #F4F4FD;
+    width: 1440px;
+    height: 732px;
+    padding: 120px 0;
 }
 
 .third-section-div {
     display: flex;
     flex-direction: column;
-    background-color: #F4F4FD;
-    width: 1440px;
-    height: 732px;
 }
 
 .third-section-main-title {
@@ -259,6 +279,7 @@ ul {
     text-transform: capitalize;
     color:#2e2f42;
     margin-top: 120px;
+    margin-bottom: 72px;
 }
 
 .our-team {
@@ -267,6 +288,7 @@ ul {
     margin-left: 156px;
     margin-top: 72px;
     padding: 0px;
+    gap: 24px;
 }
 
 .our-team-li {
@@ -274,7 +296,9 @@ ul {
     flex-direction: column;
     background-color: #FFFFFF;
     margin-right: 24px;
+    width: calc((100% - 72px) / 4);
     padding: 0px;
+    border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px #2E2F4214;
     box-shadow: 0px 1px 1px 0px #2E2F4229;
     box-shadow: 0px 1px 6px 0px #2E2F4214;
@@ -300,12 +324,13 @@ ul {
 
 /* Стилі для fourth-section */
 
-.fourth-section-div {
+.fourth-section {
     display: flex;
     flex-direction: column;
     width: 1440px;
     height: 1240px;
     margin: 0px;
+    padding-top: 120px;
 }
 
 .fourth-section-main-title {
@@ -317,6 +342,7 @@ ul {
     text-transform: capitalize;
     color:#2e2f42;
     margin-top: 120px;
+    margin-bottom: 72px;
 }
 
 .fourth-section-ul {
@@ -325,16 +351,21 @@ ul {
     flex-wrap: wrap;
     padding: 0px;
     margin: 72px 0px 120px 156px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .fourth-section-li {
     display: flex;
     flex-direction: column;
     margin: 0px 24px 48px 0px;
+    width: calc((100% - 48px) / 3);
 }
 
 .image-description {
     border: 1px solid #E7E9FC;
+    padding: 32px 16px;
+    border-top: none;
 }
 
 .fourth-section .title {
@@ -344,6 +375,7 @@ ul {
     letter-spacing: 0.02em;
     text-align: left;
     color:#2e2f42;
+    margin-bottom: 8px;
 }
 
 .fourth-section .paragraph {
@@ -357,16 +389,18 @@ ul {
 
 /* Стилі для footer */
 
-.footer-div {
+.footer {
     display: flex;
     flex-direction: column;
     margin: 0px;
     width: 1440px;
     height: 312px;
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 
 .footer .logo {
+    display: inline-block;
     font-family:"Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -378,6 +412,7 @@ ul {
     text-transform: uppercase;
     margin-top: 101.5px;
     margin-left: 156px;
+    margin-bottom: 16px;
 }
 
 .footer .span {
