@@ -329,9 +329,10 @@ ul {
     display: flex;
     flex-direction: column;
     margin: 0px 24px 48px 0px;
-    border-width: 0px, 1px, 1px, 1px;
-    border-style: solid;
-    border-color: #E7E9FC;
+}
+
+.image-description {
+    border: 1px solid #E7E9FC;
 }
 
 .fourth-section .title {
