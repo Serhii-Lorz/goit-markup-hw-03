@@ -25,7 +25,7 @@ ul {
 
 /* Стилі для header */
 
-.header-div {
+.header {
     display: flex;
     width: 1440px;
     height: 72px;
@@ -34,7 +34,7 @@ ul {
     opacity: 0px;
 }
 
-.header {
+.header-div {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #E7E9FC;
@@ -137,7 +137,7 @@ ul {
 
 /* Стилі для first-section */
 
-.first-section-div {
+.first-section {
     display: flex;
     width: 1440px;
     height: 600px;
@@ -146,7 +146,7 @@ ul {
     opacity: 0px;
 }
 
-.first-section {
+.first-section-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,7 +196,7 @@ ul {
 
 /* Стилі для second-section */
 
-.second-section-div {
+.second-section {
     width: 1440px;
 }
 
@@ -235,12 +235,12 @@ ul {
 
 /* Стилі для third-section */
 
-.third-section-div {
+.third-section {
     display: flex;
     flex-direction: column;
 }
 
-.third-section {
+.third-section-div {
     display: flex;
     flex-direction: column;
     background-color: #F4F4FD;
@@ -298,7 +298,7 @@ ul {
 
 /* Стилі для fourth-section */
 
-.fourth-section {
+.fourth-section-div {
     display: flex;
     flex-direction: column;
     width: 1440px;
@@ -355,7 +355,7 @@ ul {
 
 /* Стилі для footer */
 
-.footer {
+.footer-div {
     display: flex;
     flex-direction: column;
     margin: 0px;
