@@ -33,17 +33,12 @@ ul {
 
 .header {
     display: flex;
+    flex-direction: row;
     width: 1440px;
     height: 72px;
     gap: 0px;
     border-bottom: 1px solid #e7e9fc;
     opacity: 0px;
-}
-
-.header-div {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid #E7E9FC;
 }
 
 .header .logo {
@@ -117,7 +112,7 @@ ul {
     flex-direction: row;
     padding: 0px;
     margin-left: 332px;
-    gap: 0px 40px;
+    gap: 40px;
     margin-top: 24px;
 }
 
@@ -159,6 +154,7 @@ ul {
     width: 1440px;
     height: 600px;
     background-color: #2E2F42;
+    padding: 188px 0;
 }
 
 .main-title {
