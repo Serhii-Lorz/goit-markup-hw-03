@@ -8,13 +8,49 @@ body {
     letter-spacing: 2%;
     color: #434455;
     background-color: #FFFFFF;
+    margin: 0px;
 }
 
 ul {
     list-style-type: none;
 }
 
+.page-div {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-grow: 1;
+}
+
+.container {
+    width: 1440px;
+}
+
 /* Стилі для header */
+
+.header {
+    width: 1440px;
+    max-height: 72px;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0px 40px;
+}
 
 .header .logo {
     font-family: "Raleway", sans-serif;
@@ -26,6 +62,8 @@ ul {
     text-align: left;
     color: #4D5AE5;
     text-decoration: none;
+    margin-right: 76px;
+    margin-left: 156px;
 }
 
 .header .span {
@@ -64,6 +102,13 @@ ul {
     font-style: normal;
 }
 
+.address-ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 332px;
+    gap: 0px 40px;
+}
+
 .link-address {
     font-size: 16px;
     font-weight: 400;
@@ -86,28 +131,46 @@ ul {
 /* Стилі для first-section */
 
 .first-section {
-    background-color: #2E2F42;;
+    display: flex;
+    background-color: #2E2F42;
+    height: 600px;
+    width: 1440px;
+    justify-content: center;
 }
 
 .main-title {
+    max-width: 496px;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #FFFFFF;
+    margin-bottom: 48px;
+    margin-top: 188px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button {
+    display: block;
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    text-align: left;
+    text-align: center;
     cursor: pointer;
     color: #FFFFFF;
     background-color: #4D5AE5;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button:hover {
@@ -120,6 +183,35 @@ ul {
 
 /* Стилі для second-section */
 
+.second-section {
+    display: flex;
+    width: 1440px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    padding: 120px 0;
+    gap: 24px;
+}
+
+.features-li {
+    width: calc((100% - 72px) / 4);
+}
+
 .second-section .features .title {
     font-size: 20px;
     font-weight: 500;
@@ -127,6 +219,7 @@ ul {
     letter-spacing: 0.02em;
     text-align: left;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .second-section .features .paragraph {
@@ -141,7 +234,10 @@ ul {
 /* Стилі для third-section */
 
 .third-section {
+    display: flex;
     background-color: #F4F4FD;
+    padding: 120px 0;
+    width: 1440px;
 }
 
 .third-section-main-title {
@@ -152,10 +248,27 @@ ul {
     text-align: center;
     text-transform: capitalize;
     color:#2e2f42;
+    margin-bottom: 72px;
+}
+
+.our-team {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 110px;
 }
 
 .our-team-li {
     background-color: #FFFFFF;
+    box-shadow: 0px 2px 1px 0px #2E2F4214;
+    box-shadow: 0px 1px 1px 0px #2E2F4229;
+    box-shadow: 0px 1px 6px 0px #2E2F4214;
+}
+
+.our-team-li-div {
+    padding: 32px 0;
 }
 
 .our-team .title {
@@ -165,6 +278,7 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color:#2e2f42;
+    margin-bottom: 8px;
 }
 
 .our-team .paragraph {
@@ -178,6 +292,12 @@ ul {
 
 /* Стилі для fourth-section */
 
+.fourth-section {
+    display: flex;
+    padding: 120px 0 120px 0;
+    width: 1440px;
+}
+
 .fourth-section-main-title {
     font-size: 36px;
     font-weight: 700;
@@ -186,6 +306,28 @@ ul {
     text-align: center;
     text-transform: capitalize;
     color:#2e2f42;
+    margin-bottom: 72px;
+}
+
+.app-ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px; 
+    justify-content: center;
+}
+
+.app-li {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+.app-div {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .fourth-section .title {
@@ -195,6 +337,7 @@ ul {
     letter-spacing: 0.02em;
     text-align: left;
     color:#2e2f42;
+    margin-bottom: 8px;
 }
 
 .fourth-section .paragraph {
@@ -210,9 +353,12 @@ ul {
 
 .footer {
     background-color: #2E2F42;
+    width: 1440px;
+    padding: 100px 0;
 }
 
 .footer .logo {
+    display: inline-block;
     font-family:"Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -222,6 +368,8 @@ ul {
     color: #4D5AE5;
     text-decoration: none;
     text-transform: uppercase;
+    margin-bottom: 16px;
+    margin-left: 156px;
 }
 
 .footer .span {
@@ -235,4 +383,6 @@ ul {
     letter-spacing: 0.02em;
     text-align: left;
     color: #F4F4FD;
+    max-width: 264px;
+    margin-left: 156px;
 }
