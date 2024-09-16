@@ -274,8 +274,8 @@ img {
 .our-team {
     display: flex;
     flex-direction: row;
-    gap: 24px;
     width: calc((100% - 72px) / 4);
+    gap: 24px;
     border-radius: 0px 0px 4px 4px;
 }
 
