@@ -32,7 +32,7 @@ ul {
 .container {
     width: 1158px;
     padding: 0 15px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 img {
@@ -90,6 +90,7 @@ img {
 }
 
 .header .navigation .link {
+    display: block;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -147,7 +148,6 @@ img {
 /* Стилі для first-section */
 
 .first-section {
-    display: flex;
     background-color: #2E2F42;  
     justify-content: center;
     padding: 188px 0;
@@ -198,7 +198,6 @@ img {
 /* Стилі для second-section */
 
 .second-section {
-    display: flex;
     padding: 120px 0;
     justify-content: center;
 }
@@ -249,7 +248,6 @@ img {
 /* Стилі для third-section */
 
 .third-section {
-    display: flex;
     background-color: #F4F4FD;
     padding: 120px 0;
     justify-content: center;
@@ -308,7 +306,6 @@ img {
 /* Стилі для fourth-section */
 
 .fourth-section {
-    display: flex;
     padding: 120px 0 120px 0;
     justify-content: center;
 }
